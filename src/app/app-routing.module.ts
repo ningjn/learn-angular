@@ -8,6 +8,7 @@ import { DisplayDataComponent } from './pages/display-data/display-data.componen
 import { DxDataGridModule, DxFormModule } from 'devextreme-angular';
 import { SchoolComponent } from './pages/school/school.component';
 import { TeacherComponent } from './pages/teacher/teacher.component';
+import {MyLayoutModule} from './shared/business/my-layout/my-layout.module';
 
 const routes: Routes = [
   {
@@ -48,9 +49,20 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), DxDataGridModule, DxFormModule],
+  imports: [
+    RouterModule.forRoot(routes),
+    DxDataGridModule,
+    DxFormModule,
+    MyLayoutModule
+  ],
   exports: [RouterModule],
   providers: [AuthGuardService],
-  declarations: [HomeComponent, ProfileComponent, DisplayDataComponent, SchoolComponent, TeacherComponent]
+  declarations: [
+    HomeComponent,
+    ProfileComponent,
+    DisplayDataComponent,
+    SchoolComponent,
+    TeacherComponent
+  ]
 })
 export class AppRoutingModule { }

@@ -28,6 +28,11 @@
 ::ng-deep .header-title .dx-item-content {
   padding: 0;
   margin: 0;
+  // -----------add-------------
+  background-size: cover;
+  width: 239px;
+  height: 68px;
+  background: url(../../../../assets/images/main/logo.png) no-repeat center;
 }
 
 :host-context(.dx-theme-generic) {

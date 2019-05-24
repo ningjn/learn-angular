@@ -35,6 +35,52 @@ ng generate devextreme-angular:add-app-template
 
 ```
 
+## 基础
+### 布局
+```
+安装flex-layout组件
+npm i -s @angular/flex-layout @angular/cdk
+```
+
+### 模块
+```
+创建公用组件box
+src/app/shared/business
+ng generate module my-layout
+ng generate component my-box
+```
+
+## 细节
+### 
+```
+修改： src/app/shared/components/header/header.component.scss
+
+::ng-deep .header-title .dx-item-content {
+  padding: 0;
+  margin: 0;
+  // -----------add-------------
+  background-size: cover;
+  width: 239px;
+  height: 68px;
+  background: url(../../../../assets/images/main/logo.png) no-repeat center;
+}
+
+修改： src/app/shared/components/header/header.component.html
+    <dxi-item
+        location="before"
+        cssClass="header-title"
+        *ngIf="title"
+        [text]="title">
+    </dxi-item>
+    
+    修改为：
+    
+    <dxi-item
+        location="before"
+        cssClass="header-title">
+    </dxi-item>
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
