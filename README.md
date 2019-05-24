@@ -1,6 +1,19 @@
 # LearnAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+angular学习
+
+##前提
+安装nodejs
+
+## 创建项目
+```
+方式一
+npm install -g @angular/cli
+ng new learn-angular --defaults --style scss --routing
+
+方式二
+npx --package @angular/cli ng new learn-angular --defaults --style scss --routing
+```
 
 ## Development server
 
