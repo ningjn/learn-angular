@@ -21,9 +21,17 @@ npx -p devextreme-cli devextreme add devextreme-angular
 
 添加应用模板
 ng generate devextreme-angular:add-app-template
+  执行命令后选择
+  --(outer toolbar)
+  --Override the existing file
 
---(outer toolbar)
---Override the existing file
+添加视图
+  
+  学校概况
+  ng generate devextreme-schematics:add-view School
+  
+  师资队伍
+  ng generate devextreme-schematics:add-view Teacher --icon=group
 
 ```
 
