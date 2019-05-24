@@ -2,8 +2,8 @@
 
 angular学习
 
-##前提
-安装nodejs
+## 前提
+[安装nodejs](https://nodejs.org/en/).
 
 ## 创建项目
 ```
