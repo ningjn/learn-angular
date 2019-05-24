@@ -52,7 +52,7 @@ src/app/shared/business
 ng generate module my-layout
 ng generate component my-box
 ```
-[具体修改](https://baidu.com)
+[具体修改](https://github.com/ningjn/learn-angular/tree/003_box_detail/src/app/shared/business/my-layout/my-box)
 
 ## 细节
 ### logo修改
