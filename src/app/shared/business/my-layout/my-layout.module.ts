@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MyBoxComponent } from './my-box/my-box.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [MyBoxComponent],
@@ -8,7 +9,8 @@ import { MyBoxComponent } from './my-box/my-box.component';
     MyBoxComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FlexLayoutModule
   ]
 })
 export class MyLayoutModule { }

@@ -39,19 +39,23 @@ ng generate devextreme-angular:add-app-template
 ### 布局
 ```
 安装flex-layout组件
-npm i -s @angular/flex-layout @angular/cdk
+npm i -s @angular/flex-layout@7.0.0-beta.24 @angular/cdk
 ```
 
 ### 模块
+
+### 组件
 ```
 创建公用组件box
+
 src/app/shared/business
 ng generate module my-layout
 ng generate component my-box
 ```
+[具体修改](https://baidu.com)
 
 ## 细节
-### 
+### logo修改
 ```
 修改： src/app/shared/components/header/header.component.scss
 

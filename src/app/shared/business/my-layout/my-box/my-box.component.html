@@ -1,3 +1,13 @@
-<p>
-  my-box works!
-</p>
+<div class="dx-card" fxLayout="column" [class.my-box]="uiType === 'left-title'" fxFill>
+  <div *ngIf="uiType === 'left-title' && boxTitle" class="my-box-header"
+       fxFlex="36px">
+    <div fxLayoutAlign="start center" class="my-left-title">
+      <div class="ornament"></div>
+      <div class="text">{{ boxTitle }}</div>
+    </div>
+  </div>
+
+  <div fxFlex="*" fxLayoutAlign="center start" style="padding: 0 12px 12px 12px">
+    <ng-content></ng-content>
+  </div>
+</div>

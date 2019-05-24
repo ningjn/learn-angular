@@ -9,6 +9,7 @@ import { DxDataGridModule, DxFormModule } from 'devextreme-angular';
 import { SchoolComponent } from './pages/school/school.component';
 import { TeacherComponent } from './pages/teacher/teacher.component';
 import {MyLayoutModule} from './shared/business/my-layout/my-layout.module';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 const routes: Routes = [
   {
@@ -53,7 +54,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     DxDataGridModule,
     DxFormModule,
-    MyLayoutModule
+    MyLayoutModule,
+    FlexLayoutModule
   ],
   exports: [RouterModule],
   providers: [AuthGuardService],

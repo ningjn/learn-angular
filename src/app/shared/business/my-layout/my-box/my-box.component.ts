@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-my-box',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-box.component.scss']
 })
 export class MyBoxComponent implements OnInit {
+  @Input()
+  boxTitle: string;
+
+  @Input()
+  uiType = 'left-title'; // ui类型
 
   constructor() { }
 
