@@ -15,6 +15,18 @@ ng new learn-angular --defaults --style scss --routing
 npx --package @angular/cli ng new learn-angular --defaults --style scss --routing
 ```
 
+## 添加框架组件
+```
+npx -p devextreme-cli devextreme add devextreme-angular
+
+添加应用模板
+ng generate devextreme-angular:add-app-template
+
+--(outer toolbar)
+--Override the existing file
+
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
