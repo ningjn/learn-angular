@@ -123,6 +123,18 @@ make install
 启动： /home/appuser/.nginx/sbin/nginx
 ```
 
+### 构建
+
+```
+ng build --prod --base-href /edu/
+构建完成后，代码放到了dist/项目名下
+把项目名修改为 --base-href /edu/的 edu
+把edu目录整个放到nginx目录下的html中
+
+本地访问：http://127.0.0.1/edu/ 可以看到网页
+Linux访问：http://你的ip地址:8088/edu 可以看到网页
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
