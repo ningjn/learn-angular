@@ -94,6 +94,35 @@ ng generate component my-base-list
     </dxi-item>
 ```
 
+## 关于部署与构建
+
+[官网说明](https://angular.cn/guide/deployment)
+
+### nginx搭建web服务器
+
+```
+Windows下安装
+下载地址： http://nginx.org/download/nginx-1.17.0.zip
+解压后，直接双击nginx.exe,即可
+访问： http://127.0.0.1/ 可以看到nginx页面说明正常
+```
+
+```
+linux下安装
+下载地址： http://nginx.org/download/nginx-1.17.0.tar.gz
+解压后需要编译
+wget http://nginx.org/download/nginx-1.17.0.tar.gz
+tar xvf nginx-1.17.0.tar.gz
+cd nginx-1.17.0
+./configure --prefix=/home/appuser/.nginx
+make
+make install
+
+修改/home/appuser/.nginx/conf/nginx.conf
+端口80改为8088
+启动： /home/appuser/.nginx/sbin/nginx
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
