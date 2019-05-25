@@ -54,6 +54,15 @@ ng generate component my-box
 ```
 [具体修改](https://github.com/ningjn/learn-angular/tree/003_box_detail/src/app/shared/business/my-layout/my-box)
 
+```
+创建公用内容List组件
+
+src/app/shared/business
+ng generate module my-list
+ng generate component my-base-list
+```
+[具体修改](https://github.com/ningjn/learn-angular/tree/003_box_detail/src/app/shared/business/my-layout/my-box)
+
 ## 细节
 ### logo修改
 ```

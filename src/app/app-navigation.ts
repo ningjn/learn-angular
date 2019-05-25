@@ -1,5 +1,15 @@
 export const navigation = [
   {
+    text: '首页',
+    path: 'pages/school',
+    icon: 'folder'
+  },
+  {
+    text: '师资队伍',
+    path: 'pages/teacher',
+    icon: 'group'
+  },
+  {
     text: 'Home',
     path: '/home',
     icon: 'home'
@@ -17,15 +27,5 @@ export const navigation = [
         path: '/display-data'
       }
     ]
-  },
-  {
-    text: 'School',
-    path: 'pages/school',
-    icon: 'folder'
-  },
-  {
-    text: 'Teacher',
-    path: 'pages/teacher',
-    icon: 'group'
   }
 ];

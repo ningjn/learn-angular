@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SideNavOuterToolbarModule, SideNavInnerToolbarModule, SingleCardModule } from './layouts';
 import { FooterModule, LoginFormModule } from './shared/components';
 import { AuthService, ScreenService, AppInfoService } from './shared/services';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,12 @@ import { AuthService, ScreenService, AppInfoService } from './shared/services';
     FooterModule,
     LoginFormModule
   ],
-  providers: [AuthService, ScreenService, AppInfoService],
+  providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy},
+    AuthService,
+    ScreenService,
+    AppInfoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
