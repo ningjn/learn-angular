@@ -20,6 +20,17 @@ export class SchoolComponent implements OnInit {
     {title: '省委常委、宣传部部长关志鸥来我校听思政课', flag: '', time: '05-22'},
   ];
 
+  msgList: any[] = [
+    {title: '山东财经大学2019年公开招聘优秀博士启事', flag: '', time: '05-22'},
+    {title: '关于选拔我校研究生赴美国特拉华大学访学的通知', flag: '', time: '05-22'},
+    {title: '关于召开工商管理案例开发与教学国际研讨会的通知', flag: '', time: '05-22'},
+    {title: '关于召开工商管理案例开发与教学国际研讨会的通知', flag: '', time: '05-22'},
+    {title: '关于召开工商管理案例开发与教学国际研讨会的通知', flag: '', time: '05-22'},
+    {title: '省委常委、宣传部部长关志鸥来我校听思政课', flag: '', time: '05-22'},
+    {title: '省委常委、宣传部部长关志鸥来我校听思政课', flag: '', time: '05-22'},
+    {title: '省委常委、宣传部部长关志鸥来我校听思政课', flag: '', time: '05-22'},
+  ];
+
   dataSource: string[] = [
     './assets/images/gallery/1.jpg',
     './assets/images/gallery/2.jpg',
