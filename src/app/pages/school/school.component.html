@@ -18,12 +18,12 @@
     <div style="height: 460px;"
          gdRows="1fr" gdColumns="1fr 1fr" gdGap="20px">
       <div gdRow="1" gdColumn="1">
-        <app-my-box uiType="left" title="财大要闻">
+        <app-my-box uiType="left-title" boxTitle="财大要闻">
           <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
         </app-my-box>
       </div>
       <div gdRow="1" gdColumn="2">
-        <app-my-box uiType="left" title="通知公告">
+        <app-my-box uiType="left-title" boxTitle="通知公告">
           <app-my-base-list fxFill [listData]="msgList"></app-my-base-list>
         </app-my-box>
       </div>
@@ -47,17 +47,17 @@
     <div style="height: 460px;"
          gdRows="1fr" gdColumns="1fr 1fr 1fr" gdGap="20px">
       <div gdRow="1" gdColumn="1">
-        <app-my-box uiType="left" title="财大要闻">
+        <app-my-box uiType="left-title" boxTitle="财大要闻">
           <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
         </app-my-box>
       </div>
       <div gdRow="1" gdColumn="2">
-        <app-my-box title="通知公告">
+        <app-my-box boxTitle="通知公告">
           <app-my-base-list fxFill [listData]="msgList"></app-my-base-list>
         </app-my-box>
       </div>
       <div gdRow="1" gdColumn="3">
-        <app-my-box title="通知公告">
+        <app-my-box boxTitle="通知公告">
           <app-my-base-list fxFill [listData]="msgList"></app-my-base-list>
         </app-my-box>
       </div>
@@ -68,12 +68,12 @@
     <div style="height: 460px;"
          gdRows="1fr" gdColumns="1fr 1fr" gdGap="20px">
       <div gdRow="1" gdColumn="1">
-        <app-my-box title="财大要闻">
+        <app-my-box boxTitle="财大要闻">
           <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
         </app-my-box>
       </div>
       <div gdRow="1" gdColumn="2">
-        <app-my-box title="通知公告">
+        <app-my-box boxTitle="通知公告">
           <app-my-base-list fxFill [listData]="msgList"></app-my-base-list>
         </app-my-box>
       </div>
@@ -104,7 +104,7 @@
   <!--要闻-->
   <div class="content-block">
     <div style="height: 460px;">
-      <app-my-box title="财大要闻">
+      <app-my-box boxTitle="财大要闻">
         <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
       </app-my-box>
     </div>
@@ -113,7 +113,7 @@
   <!--财大要闻-->
   <div class="content-block">
     <div style="height: 460px;">
-      <app-my-box title="公告通知">
+      <app-my-box boxTitle="公告通知">
         <app-my-base-list fxFill [listData]="msgList"></app-my-base-list>
       </app-my-box>
     </div>
@@ -134,29 +134,21 @@
 
   <div class="content-block">
     <div style="height: 460px;">
-      <app-my-box title="财大要闻">
+      <app-my-box boxTitle="财大要闻">
         <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
       </app-my-box>
     </div>
   </div>
   <div class="content-block">
     <div style="height: 460px;">
-      <app-my-box title="财大要闻">
+      <app-my-box boxTitle="财大要闻">
         <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
       </app-my-box>
     </div>
   </div>
   <div class="content-block">
     <div style="height: 460px;">
-      <app-my-box title="财大要闻">
-        <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
-      </app-my-box>
-    </div>
-  </div>
-
-  <div class="content-block">
-    <div style="height: 460px;">
-      <app-my-box title="财大要闻">
+      <app-my-box boxTitle="财大要闻">
         <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
       </app-my-box>
     </div>
@@ -164,7 +156,15 @@
 
   <div class="content-block">
     <div style="height: 460px;">
-      <app-my-box title="财大要闻">
+      <app-my-box boxTitle="财大要闻">
+        <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
+      </app-my-box>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <div style="height: 460px;">
+      <app-my-box boxTitle="财大要闻">
         <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
       </app-my-box>
     </div>
@@ -196,12 +196,12 @@
     <div style="height: 460px;"
          gdRows="1fr" gdColumns="1fr 1fr" gdGap="20px">
       <div gdRow="1" gdColumn="1">
-        <app-my-box title="财大要闻">
+        <app-my-box boxTitle="财大要闻">
           <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
         </app-my-box>
       </div>
       <div gdRow="1" gdColumn="2">
-        <app-my-box title="通知公告">
+        <app-my-box boxTitle="通知公告">
           <app-my-base-list fxFill [listData]="msgList"></app-my-base-list>
         </app-my-box>
       </div>
@@ -225,17 +225,17 @@
     <div style="height: 460px;"
          gdRows="1fr" gdColumns="1fr 1fr 1fr" gdGap="20px">
       <div gdRow="1" gdColumn="1">
-        <app-my-box title="财大要闻">
+        <app-my-box boxTitle="财大要闻">
           <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
         </app-my-box>
       </div>
       <div gdRow="1" gdColumn="2">
-        <app-my-box title="通知公告">
+        <app-my-box boxTitle="通知公告">
           <app-my-base-list fxFill [listData]="msgList"></app-my-base-list>
         </app-my-box>
       </div>
       <div gdRow="1" gdColumn="3">
-        <app-my-box title="通知公告">
+        <app-my-box boxTitle="通知公告">
           <app-my-base-list fxFill [listData]="msgList"></app-my-base-list>
         </app-my-box>
       </div>
@@ -246,12 +246,12 @@
     <div style="height: 460px;"
          gdRows="1fr" gdColumns="1fr 1fr" gdGap="20px">
       <div gdRow="1" gdColumn="1">
-        <app-my-box title="财大要闻">
+        <app-my-box boxTitle="财大要闻">
           <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
         </app-my-box>
       </div>
       <div gdRow="1" gdColumn="2">
-        <app-my-box title="通知公告">
+        <app-my-box boxTitle="通知公告">
           <app-my-base-list fxFill [listData]="msgList"></app-my-base-list>
         </app-my-box>
       </div>
@@ -284,12 +284,12 @@
     <div style="height: 460px;"
          gdRows="1fr" gdColumns="1fr 1fr" gdGap="20px">
       <div gdRow="1" gdColumn="1">
-        <app-my-box title="财大要闻">
+        <app-my-box boxTitle="财大要闻">
           <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
         </app-my-box>
       </div>
       <div gdRow="1" gdColumn="2">
-        <app-my-box title="通知公告">
+        <app-my-box boxTitle="通知公告">
           <app-my-base-list fxFill [listData]="msgList"></app-my-base-list>
         </app-my-box>
       </div>
@@ -313,17 +313,17 @@
     <div style="height: 460px;"
          gdRows="1fr" gdColumns="1fr 1fr 1fr" gdGap="20px">
       <div gdRow="1" gdColumn="1">
-        <app-my-box title="财大要闻">
+        <app-my-box boxTitle="财大要闻">
           <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
         </app-my-box>
       </div>
       <div gdRow="1" gdColumn="2">
-        <app-my-box title="通知公告">
+        <app-my-box boxTitle="通知公告">
           <app-my-base-list fxFill [listData]="msgList"></app-my-base-list>
         </app-my-box>
       </div>
       <div gdRow="1" gdColumn="3">
-        <app-my-box title="通知公告">
+        <app-my-box boxTitle="通知公告">
           <app-my-base-list fxFill [listData]="msgList"></app-my-base-list>
         </app-my-box>
       </div>
@@ -334,12 +334,12 @@
     <div style="height: 460px;"
          gdRows="1fr" gdColumns="1fr 1fr" gdGap="20px">
       <div gdRow="1" gdColumn="1">
-        <app-my-box title="财大要闻">
+        <app-my-box boxTitle="财大要闻">
           <app-my-base-list fxFill [listData]="newsList"></app-my-base-list>
         </app-my-box>
       </div>
       <div gdRow="1" gdColumn="2">
-        <app-my-box title="通知公告">
+        <app-my-box boxTitle="通知公告">
           <app-my-base-list fxFill [listData]="msgList"></app-my-base-list>
         </app-my-box>
       </div>
