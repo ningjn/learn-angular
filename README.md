@@ -39,7 +39,7 @@ ng generate devextreme-angular:add-app-template
 ### 布局
 ```
 安装flex-layout组件
-npm i -s @angular/flex-layout@7.0.0-beta.24 @angular/cdk
+npm i -s @angular/flex-layout @angular/cdk
 ```
 
 ### 模块
